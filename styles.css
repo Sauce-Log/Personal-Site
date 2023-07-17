@@ -173,6 +173,23 @@
   .gallery-itemproj:hover .image-caption {
     opacity: 1;
   }
+  .description {
+    padding: 20px;
+    background-color: rgba(20, 33, 61,.9);
+    border-radius: 10px;
+    color: rgba(229, 229, 229);
+    font-size: 18px;
+    line-height: 1.6;
+    width: 80%; /* You can adjust this value depending on your needs */
+    margin: 20px auto; /* centers the description box */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.description:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
   
   
   
