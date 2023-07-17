@@ -20,6 +20,76 @@
             </ul>
         </div>
         
+        <div class="description">
+            <h2>University of California, Berkeley - Coursework</h2>
+            <br>
+            <div class="semester">
+              <h3 onclick="toggleVisibility('fall21')">Fall 2021</h3>
+              <div id="fall21" style="display: none;">
+                <h4>(Mostly Breadth Classes)</h4>
+                <p>Celtic 70 - The World of the Celts</p>
+                <p>Hum 20 - Exploration in Arts + Design at Berkeley</p>
+                <p>Nusctx 10 - Introduction to Human Nutrition</p>
+                <p>Pbhealth 180 - The Evolution of Human Sexuality</p>
+                <p>Physics C10 - Descriptive Introduction to Physics</p>
+              </div>
+            </div>
+          
+            <div class="semester">
+              <h3 onclick="toggleVisibility('spring22')">Spring 2022</h3>
+              <div id="spring22" style="display: none;">
+                <p>Econ 2 - Introduction to Economics</p>
+                <p>Italian 30 - Dante (in English)</p>
+                <p>Math 16B - Analytic Geometry and Calculus</p>
+                <p>Ugba 10 - Principles of Business</p>
+              </div>
+            </div>
+
+            <div class="semester">
+                <h3 onclick="toggleVisibility('fall22')">Fall 2022</h3>
+                <div id="fall22" style="display: none;">
+                    <p>Compsci 61A - The Structure and Interpretation of Computer Programs</p>
+                    <p>Data C8 - Foundations of Data Science</p>
+                    <p>Data C88S - Probability and Mathematical Statistics in Data Science</p>
+                    <p>Rhetor R1B - The Craft of Writing</p>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h3 onclick="toggleVisibility('spring23')">Spring 2023</h3>
+                <div id="spring23" style="display: none;">
+                    <p>Compsci 61B - Data Structures</p>
+                    <p>Data C100 - Principles & Techniques of Data Science</p>
+                    <p>Engin 198 - Directed Group Studies for Advanced Undergraduates (Blockchain Fundamentals)</p>
+                    <p>Legalst 88 - Crime and Punishment: taking the measure of the US justice system (Data Science Connector)</p>
+                    <p>Math 54 - Linear Algebra and Differential Equations</p>
+                    <p>Ugba 192ID - Impact Startup Disco</p>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h3 onclick="toggleVisibility('fall23')">Fall 2023</h3>
+                <div id="fall23" style="display: none;">
+                    <p>Data C140 - Probability for Data Science</p>
+                    <p>Eecs 127 - Optimization Models in Engineering</p>
+                    <p>Math 110 - Linear Algebra</p>
+                </div>
+            </div>
+            
+          </div>
+          
+          <script>
+          function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+              element.style.display = "block";
+            } else {
+              element.style.display = "none";
+            }
+          }
+          </script>
+          
+
     </div>
    
 </body>
