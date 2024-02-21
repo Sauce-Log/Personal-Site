@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackson Hamada</title>
@@ -19,7 +20,81 @@
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
         </div>
+
+        <div class="description">
+            <h1>1978 Honda CB125s</h1>
+            <p> This bike was my first real motorcycle, and also my first motorcycle
+                that I really worked on myself. Prior to this I had rode my dads old 
+                Honda Elite 150 but that was about it. This Honda wasn't in the best shape
+                when I got it, but it did (mostly) run.
+            </p>
+            <br>
+            <p>
+                I started with the basics; cleaned and adjusted carb, new tires,
+                adjusted clutch and brakes, new fuel line and filter, transmission
+                and engine oil change, and other small fixes. Then I started to move on
+                to replacing old parts and adding new parts to go for a more cafe style
+                look and build. I replaced the seat with a new lower profile seat, got
+                new lower profile handlebars, replaced the old rear shocks and springs,
+                got new mirrors, and added a new led taillight and license plate mount.
+            </p>
+            <br>
+            <a href="cb125/IMG_3441.jpg" class="gallery-item-cb" data-fancybox="gallery">
+                <img src="cb125/IMG_3441.jpg" alt="Luke">
+              </a>
+            <p>
+                My next step was definitely the hardest part as I had very little experience
+                with: wiring. I wanted to swap to a new led headlight as the old headlight
+                was super dim on the 6v battery and the old turn signals didn't work. Due to the 
+                bikes use of an old 6v battery and wiring system, I decided to add a small 
+                external battery mounted under the seat that would power the new headlight and turn signals 
+                as well as the rear tailight. This became a bigger piece of work than I had 
+                imagined when I realized someone before me had redone a lot of wiring and 
+                did not keep the original color codes, so hours were spent figuring out what was 
+                connected to what. After many grueling hours I finally got everything done and to 
+                finish it all up I wired the new battery kill switch to an old ceiling fan/lamp pull cord
+                which had one of those little wooden knob and brass chains to turn everything on.
+            </p>
+            <br>
+            <a href="cb125/IMG_4313.jpg" class="gallery-item-cb" data-fancybox="gallery">
+                <img src="cb125/IMG_4313.jpg" alt="Luke">
+            </a>
+            <p>
+                With most cosmetics and maintenance complete, as well as street legal and fully functioning lights,
+                I was ready to get the bike fully registered so I could begin riding it (legally). I had also 
+                planned to next do a top end engine rebuild, and hopefully get the bike running at full power again. 
+                Unfortunately, I brought the bike up with me to Berkeley to ride it around town, and after 1 week 
+                of being there the garage I parked in suffered a gate malfunction and the bike was gone. 
+                With no insurance yet and a bike not even in the DMV system (45 year old bike) I was 
+                pretty much out of luck, and that was the end of the story for my Honda.
+            </p>
+        </div>
+
+        <div class="gallery">
+            <a href="cb125/IMG_0746.jpg" class="gallery-item" data-fancybox="gallery">
+              <img src="cb125/IMG_0746.jpg" alt="Flag">
+            </a>
+            <a href="cb125/IMG_4360.jpg" class="gallery-item" data-fancybox="gallery">
+                <img src="cb125/IMG_4360.jpg" alt="Luke">
+            </a>
+            <a href="cb125/IMG_4362.jpg" class="gallery-item" data-fancybox="gallery">
+                <img src="cb125/IMG_4362.jpg" alt="Luke">
+            </a>
+            <a href="cb125/IMG_4402.jpg" class="gallery-item" data-fancybox="gallery">
+                <img src="cb125/IMG_4402.jpg" alt="Luke">
+            </a>
+            <!-- Add new <a> tags to add new photos to gallery -->
+          </div>
+          
+
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });    
+    </script>
    
 </body>
 </html>
