@@ -7,7 +7,7 @@
     width: 100%;
     height: 100vh;
     /* joeyywavenew2.gif */
-    background-image: url(Light\ Processes.gif);
+    background-image: url(LightProcesses.gif);
     background-size:cover;
     background-position: center;
     background-color: black;
@@ -138,7 +138,7 @@
   .gallery-item:hover img {
     transform: scale(1.5);
   }
-  
+
   .galleryproj {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
