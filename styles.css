@@ -13,6 +13,7 @@
     background-color: black;
     overflow: hidden;
     overflow: auto;
+    position: fixed;
 }
 
 .navbar{
@@ -200,8 +201,8 @@
     color: rgba(229, 229, 229);
     font-size: 18px;
     line-height: 1.6;
-    width: 80%; /* You can adjust this value depending on your needs */
-    margin: 20px auto; /* centers the description box */
+    width: 80%;
+    margin: 20px auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     overflow: auto;
@@ -228,6 +229,25 @@
     /* Add your styles */
   }
 
-  
+  .resume-container {
+    position: absolute; /* Overlay it on the background */
+    top: 70%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    width: 100%; /* Full width of the page */
+    height: 100%; /* Full height of the page */
+}
+
+.resume-container embed,
+.resume-container iframe {
+    width: 60%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Optional border for emphasis */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
   
   
