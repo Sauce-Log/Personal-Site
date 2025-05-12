@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jackson Hamada</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- If you have an external CSS file -->
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <a
+          href="https://www.linkedin.com/in/jackson-hamada-017241253/"
+          target="_blank"
+        >
+          <img src="38669.png" class="logo" />
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Berkeley.html">Berkeley</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>Disabled Students Program - Database Management System</h1>
+
+        <p>
+          While working for the Disabled Students Program at UC Berkeley, it
+          became apparent that our current system for managing our inventory was
+          inefficient and overly complicated. In its current state our general
+          workflow was: Boss reviews requests and sends them to furniture team
+          -> furniture team moves items to desired locations (i.e. moving an
+          unused wheelchair accesible desk in Dwinelle 242 to Wheeler 100) ->
+          furniture team confirms the move and sends picture of moved item to
+          boss -> boss (usually) updates spreadsheet with new location and
+          uploads image to google drive folder with images of every item. Now
+          when a new request would come up we would generally try to find an
+          item that matched the request that was as close as possible, and if
+          not take a new one from the depot. In order to perform this search one
+          would have to look through the "inventory" spreadshet, find an item
+          that matches and see if it is currently in use via requests
+          spreadsheet, confirm the items location by referencing the most recent
+          image instance of that item in the image folder, and then hopefully go
+          get that item.
+        </p>
+
+        <br />
+
+        <p>
+          Realizing the inneficiencies of this method, I set about constructing
+          a relational database that would serve as a more organized and
+          constrained base for a web based dashboard to keep track of items and
+          ease the search process. Following my implementation of this system,
+          the workflow is now much more efficient, allows for a much better
+          search functionality, and individuals on the furniture team can work
+          more independently.
+        </p>
+
+        <br />
+
+        <p>
+          The general workflow is now much simpler; Boss sends request at the
+          beginning of the week -> furniture team can independently locate
+          correct unsued items in/near the requested location -> furniture team
+          updates/adds items and photos as needed. Features like item use and
+          "last updated" status, building location, easy image uploads and
+          timestamping, and a fast search have greatly improved the overall
+          capabilities of our team and will continue to have lasting effects as
+          a more permanent system that doesn't need regular updates/clearing
+          each semester. Additionally new members of the team have a much easier
+          time becoming familiar with the system compared to the somewhat
+          convuluted mess of spreadsheets and google drive folders from before.
+          Missing/unused inventory items are also routinely identified and the
+          issue rectified leading to lower costs and wasted time for the team as
+          a whole, while enabling us to better serve students with
+          accomodations.
+        </p>
+
+        <br />
+
+        <h2>Tech Stack</h2>
+
+        <br />
+
+        <p>
+          The application uses a PostgreSQL database hosted via Vercel, with a
+          Flask backend and SQLAlchemy in Python to interact with the database,
+          also hosted with Vercel. The frontend is built upon a Create React App
+          base with Bootstrap components for simple styling. Amazon S3
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
